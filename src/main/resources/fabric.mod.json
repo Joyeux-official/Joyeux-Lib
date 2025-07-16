@@ -3,15 +3,15 @@
 	"id": "joyeux-lib",
 	"version": "${version}",
 	"name": "Joyeux Lib",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Libary to help make coding Joyeux mods easier!",
 	"authors": [
-		"Me!"
+		"Joyeux"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "GNU Lesser General Public License v3",
 	"icon": "assets/joyeux-lib/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -26,19 +26,12 @@
 		]
 	},
 	"mixins": [
-		"joyeux-lib.mixins.json",
-		{
-			"config": "joyeux-lib.client.mixins.json",
-			"environment": "client"
-		}
+		"joyeux-lib.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
