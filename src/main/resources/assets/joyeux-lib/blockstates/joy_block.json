@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "joyeux-lib:block/joy_block",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "joyeux-lib:block/joy_block",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "joyeux-lib:block/joy_block"
+    },
+    "facing=west": {
+      "model": "joyeux-lib:block/joy_block",
+      "y": 90
+    }
+  }
+}
