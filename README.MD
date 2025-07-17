@@ -22,13 +22,16 @@
 
     * Datagen providers include; SoundsProvider, ModelsProvider.
     * Other stuff; ItemHitSound.
-    * Our mascots! (Joy and Koy)
 
-### Coming Soon:
-- This also adds a few "decor" blocks, including;
-    * Plushies of all of our team! (even Maketendo :smirk:)
+### Cool Extras!
+- This also adds a few "interactable" blocks, including;
 
--------------
+    * Our mascot (Joy and Koy)
+    * Plushies of all the devs
+  
+### How to use this library?
+- See https://joyeux-info.carrd.co/#lib for instructions on how to use this library in your mod.
+
 
 <h2>
   <img src="https://cdn.modrinth.com/data/cached_images/23b97ecfe49586f70c6a7d4e4ca63ac14d47e6e1.png"
@@ -39,6 +42,7 @@
   Links
 </h2>
 
+### - [Website](https://joyeux-info.carrd.co/#)
 ### - [Modrinth](https://modrinth.com/project/joyeuxlib)
 ### - [Github](https://github.com/Addi3/Joyeux-Lib)
 ### - [Discord Server](https://discord.gg/5JDKuzarcS)
