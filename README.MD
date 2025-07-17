@@ -18,14 +18,17 @@
 ### Library
 - This adds a few providers and extra class that we will use in all our mods, this Library will save us the effort of coding the same things over and over for all our mods:
 
-    * Datagen providers include; SoundsProvider, ModelsProvider
-    * Other stuff; ItemHitSound
+    * Datagen providers include; SoundsProvider, ModelsProvidern, EnglishLangProvider, RecipeProvider
+    * Other stuff; ItemHitSound, StringCursor
 
-### Coming soon!
-- This also adds a few "decor" blocks, including;
+### Cool Extras!
+- This also adds a few "interactable" blocks, including;
 
-    * Our maskots (Joy and Koy)
-    * plushis of all the devs
+    * Our mascot (Joy and Koy)
+    * Plushies of all the devs
+  
+### How to use this library?
+- See https://joyeux-info.carrd.co/#lib for instructions on how to use this library in your mod.
 
 -------------
 -------------
