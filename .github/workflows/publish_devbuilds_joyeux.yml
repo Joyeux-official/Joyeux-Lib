@@ -48,7 +48,7 @@ jobs:
           url: ${{ secrets.JOYEUX_SERVER }}
           file: 'build/libs/*'
           username: JoyeuxLib Automatic-Compiled Build
-          avatar: 'https://i.imgur.com/PLXp29k.png'
+          avatar: 'https://github.com/Addi3/Joyeux-Lib/blob/master/promo/main_icon.png?raw=true'
           commit: '> :sparkles: [%MESSAGE%](<%LINK%>) by [%AUTHOR%](<%AUTHOR_LINK%>)! Happy testing!'
           message: |
             <:new1:1253371736510959636><:new2:1253371805734015006> New `${{ github.repository }}` developer build `#${{ github.run_number }}`:
