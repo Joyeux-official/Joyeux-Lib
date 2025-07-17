@@ -39,6 +39,7 @@
   Links
 </h2>
 
+### - [Website](https://joyeux-info.carrd.co/#)
 ### - [Modrinth](https://modrinth.com/project/joyeuxlib)
 ### - [Github](https://github.com/Addi3/Joyeux-Lib)
 ### - [Discord Server](https://discord.gg/5JDKuzarcS)
