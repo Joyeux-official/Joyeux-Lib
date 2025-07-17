@@ -1,33 +1,33 @@
-![Replace this with a description](https://cdn.modrinth.com/data/cached_images/1cb1dcdf4e441f6368876e0db9620707b7e78261.png)
+![JoyeuxLib Banner](https://github.com/Addi3/Joyeux-Lib/blob/master/promo/small_banner_2.png?raw=true)
 
--------------
+<div align="center">
 
 [<img alt="modrinth" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg">](https://modrinth.com/mod/joyeuxlib) <!-- SVG version -->
 [<img alt="fabric" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/fabric_vector.svg">](https://fabricmc.net/) <!-- SVG version -->
 
+</div>
+
 -------------
 <h2>
   <img src="https://cdn.modrinth.com/data/cached_images/b18b275a0e9bb4000e015b935b65037166301538.png"
-       alt="What does this mod add?"
+       alt="What does JoyeuxLib add?"
        width="25"
        height="25"
        style="vertical-align: middle; margin-right: 8px;">
-  What does this provide?
+  What does JoyeuxLib provide?
 </h2>
 
-### Library
+### Currently:
 - This adds a few providers and extra class that we will use in all our mods, this Library will save us the effort of coding the same things over and over for all our mods:
 
-    * Datagen providers include; SoundsProvider, ModelsProvider
-    * Other stuff; ItemHitSound
+    * Datagen providers include; SoundsProvider, ModelsProvider.
+    * Other stuff; ItemHitSound.
+    * Our mascots! (Joy and Koy)
 
-### Coming soon!
+### Coming Soon:
 - This also adds a few "decor" blocks, including;
+    * Plushies of all of our team! (even Maketendo :smirk:)
 
-    * Our maskots (Joy and Koy)
-    * plushis of all the devs
-
--------------
 -------------
 
 <h2>
