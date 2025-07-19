@@ -1,9 +1,6 @@
 package com.joyeuxlib;
 
-import com.joyeuxlib.datagenproviders.JoyeuxLibEnglishLangProvider;
-import com.joyeuxlib.datagenproviders.JoyeuxLibModelProvider;
-import com.joyeuxlib.datagenproviders.JoyeuxLibRecipeProvider;
-import com.joyeuxlib.datagenproviders.JoyeuxLibSoundProvider;
+import com.joyeuxlib.datagenproviders.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -18,6 +15,7 @@ public class JoyeuxLibDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(this::englishLibProvider);
+		pack.addProvider(JoyeuxLibLootTableProvider::new);
 	}
 
 	public JoyeuxLibEnglishLangProvider englishLibProvider(FabricDataOutput output) {

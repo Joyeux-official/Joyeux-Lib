@@ -14,8 +14,6 @@ public class JoyeuxLibModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
     }
-
-
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
