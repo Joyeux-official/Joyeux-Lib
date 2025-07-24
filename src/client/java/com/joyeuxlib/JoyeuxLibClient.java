@@ -9,7 +9,6 @@ public class JoyeuxLibClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-
 		BlockRenderLayerMap.INSTANCE.putBlock(JoyeuxLibBlocks.JOY_BLOCK, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(JoyeuxLibBlocks.KOY_BLOCK, RenderLayer.getCutout());
 	}

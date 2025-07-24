@@ -53,7 +53,7 @@
   <a href="https://modrinth.com/project/joyeuxlib" target="_blank" style="margin: 0 1px;">
     <img src="https://raw.githubusercontent.com/Addi3/Joyeux-Lib/refs/heads/master/promo/buttons/modrinth-button.png" alt="Modrinth" title="Modrinth" style="height: 64px;" />
   </a>
-  <a href="https://github.com/Addi3/Joyeux-Lib" target="_blank" style="margin: 0 1px;">
+  <a href="https://github.com/Joyeux-official/Joyeux-Lib" target="_blank" style="margin: 0 1px;">
     <img src="https://raw.githubusercontent.com/Addi3/Joyeux-Lib/refs/heads/master/promo/buttons/github-button.png" alt="GitHub" title="GitHub" style="height: 64px;" />
   </a>
   <a href="https://discord.gg/5JDKuzarcS" target="_blank" style="margin: 0 1px;">

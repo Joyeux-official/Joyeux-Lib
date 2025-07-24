@@ -12,27 +12,16 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class JoyeuxLibBlocks  {
-
-public static final Block JOY_BLOCK = registerBlock("joy_block", new BoxBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).nonOpaque()));
-public static final Block KOY_BLOCK = registerBlock("koy_block", new BoxBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).nonOpaque()));
-
+    public static final Block JOY_BLOCK = registerBlock("joy_block", new BoxBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).nonOpaque()));
+    public static final Block KOY_BLOCK = registerBlock("koy_block", new BoxBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
-
        registerBlockItem(name, block);
-
         return Registry.register(Registries.BLOCK, new Identifier(JoyeuxLib.MOD_ID, name), block);
     }
-
-
-private static Item registerBlockItem(String name, Block block) {
-
-    return Registry.register(Registries.ITEM, new Identifier(JoyeuxLib.MOD_ID, name),
-    new BlockItem(block, new FabricItemSettings()));
-
-
-}
-
-    public static void registerJoyeuxLibBlocks() {
+    private static Item registerBlockItem(String name, Block block) {
+        return Registry.register(Registries.ITEM, new Identifier(JoyeuxLib.MOD_ID, name),
+        new BlockItem(block, new FabricItemSettings()));
     }
+    public static void registerJoyeuxLibBlocks() {}
 }
