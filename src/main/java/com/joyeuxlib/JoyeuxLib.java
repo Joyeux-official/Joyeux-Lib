@@ -20,10 +20,8 @@ public class JoyeuxLib implements ModInitializer {
 		return new Identifier(MOD_ID, path);
 	}
 
-
 	@Override
 	public void onInitialize() {
-
 		JoyeuxLibBlocks.registerJoyeuxLibBlocks();
 		JoyeuxLibSounds.init();
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
