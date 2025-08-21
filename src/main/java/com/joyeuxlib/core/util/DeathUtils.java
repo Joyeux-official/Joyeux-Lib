@@ -10,6 +10,7 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * @author Capozi
@@ -17,7 +18,7 @@ import net.minecraft.util.Formatting;
  * utility methods for banning and making unregistered death messages
  **/
 public class DeathUtils {
-    public void ban(PlayerEntity user, LivingEntity entity, String reason){
+    public void ban(PlayerEntity user, LivingEntity entity, String reason, String disconnectMessage, @Nullable Formatting messageColour){
         ServerPlayerEntity target = (ServerPlayerEntity) entity;
         ServerPlayerEntity source = (ServerPlayerEntity) user;
         MinecraftServer server = source.getServer();
@@ -33,7 +34,10 @@ public class DeathUtils {
                         reason
                 );
                 banList.add(entry);
-                target.networkHandler.disconnect(Text.literal("You have been sentenced to an eternity in the Otherside").formatted(Formatting.AQUA));
+                if(messageColour != null) {
+                    target.networkHandler.disconnect(Text.literal(disconnectMessage).formatted(messageColour));
+                }
+                target.networkHandler.disconnect(Text.literal(disconnectMessage));
             }
         }
     }
