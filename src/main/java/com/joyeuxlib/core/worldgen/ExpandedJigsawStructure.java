@@ -39,7 +39,6 @@ public final class ExpandedJigsawStructure extends Structure {
             ).apply(instance, ExpandedJigsawStructure::new)),
             ExpandedJigsawStructure::validate
     ).codec();
-
     private final RegistryEntry<StructurePool> startPool;
     private final Optional<Identifier> startJigsawName;
     private final int size;
@@ -47,7 +46,6 @@ public final class ExpandedJigsawStructure extends Structure {
     private final boolean useExpansionHack;
     private final Optional<Heightmap.Type> projectStartToHeightmap;
     private final int maxDistanceFromCenter;
-
     private static DataResult<ExpandedJigsawStructure> validate(ExpandedJigsawStructure structure) {
         int terrainOffset = switch (structure.getTerrainAdaptation()) {
             case NONE -> 0;
@@ -57,8 +55,6 @@ public final class ExpandedJigsawStructure extends Structure {
                 ? DataResult.error(() -> "Structure size including terrain adaptation must not exceed 128")
                 : DataResult.success(structure);
     }
-
-
     public ExpandedJigsawStructure(Structure.Config config, RegistryEntry<StructurePool> startPool, Optional<Identifier> startJigsawName, int size, HeightProvider startHeight, boolean useExpansionHack, Optional<Heightmap.Type> projectStartToHeightmap, int maxDistanceFromCenter) {
         super(config);
         this.startPool = startPool;
@@ -69,22 +65,18 @@ public final class ExpandedJigsawStructure extends Structure {
         this.projectStartToHeightmap = projectStartToHeightmap;
         this.maxDistanceFromCenter = maxDistanceFromCenter;
     }
-
     public ExpandedJigsawStructure(Structure.Config config, RegistryEntry<StructurePool> startPool, int size, HeightProvider startHeight, boolean useExpansionHack, Heightmap.Type projectStartToHeightmap) {
         this(config, startPool, Optional.empty(), size, startHeight, useExpansionHack, Optional.of(projectStartToHeightmap), 80);
     }
-
     public ExpandedJigsawStructure(Structure.Config config, RegistryEntry<StructurePool> startPool, int size, HeightProvider startHeight, boolean useExpansionHack) {
         this(config, startPool, Optional.empty(), size, startHeight, useExpansionHack, Optional.empty(), 80);
     }
-
     public Optional<Structure.StructurePosition> getStructurePosition(Structure.Context context) {
         ChunkPos chunkPos = context.chunkPos();
         int i = this.startHeight.get(context.random(), new HeightContext(context.chunkGenerator(), context.world()));
         BlockPos blockPos = new BlockPos(chunkPos.getStartX(), i, chunkPos.getStartZ());
         return StructurePoolBasedGenerator.generate(context, this.startPool, this.startJigsawName, this.size, blockPos, this.useExpansionHack, this.projectStartToHeightmap, this.maxDistanceFromCenter);
     }
-
     public StructureType<?> getType() {
         return JoyeuxLib.EXPANDED_JIGSAW;
     }
